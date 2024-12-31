@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard App</title>
+    <title>Flashcard App - HSK 4</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="flashcard-container">
-        <div id="flashcard" class="flashcard">サーバー</div>
+    <div class="app-container">
+        <h1>Flashcard HSK 4</h1>
+        
+        <!-- Dropdown chọn chủ đề -->
+        <div class="topic-selector">
+            <label for="topicSelect">Chọn chủ đề:</label>
+            <select id="topicSelect">
+                <option value="" disabled selected>Chọn chủ đề...</option>
+            </select>
+        </div>
+
+        <!-- Khu vực hiển thị flashcard -->
+        <div class="flashcard-container">
+            <div id="flashcard" class="flashcard">Chọn chủ đề để bắt đầu</div>
+        </div>
+
+        <!-- Nút điều khiển -->
         <div class="buttons">
             <button id="flipButton">Flip</button>
-            <button id="passButton">Pass</button>
+            <button id="passButton">Next</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

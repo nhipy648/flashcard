@@ -1,0 +1,34 @@
+{
+    "topics": [
+        {
+            "topic": "Tình yêu & Gia đình",
+            "words": [
+                { "word": "爱情", "meaning": "tình yêu" },
+                { "word": "丈夫", "meaning": "chồng" },
+                { "word": "妻子", "meaning": "vợ" },
+                { "word": "父母", "meaning": "bố mẹ" },
+                { "word": "孩子", "meaning": "con cái" }
+            ]
+        },
+        {
+            "topic": "Công việc & Học tập",
+            "words": [
+                { "word": "安排", "meaning": "sắp xếp" },
+                { "word": "计划", "meaning": "kế hoạch" },
+                { "word": "能力", "meaning": "năng lực" },
+                { "word": "任务", "meaning": "nhiệm vụ" },
+                { "word": "经验", "meaning": "kinh nghiệm" }
+            ]
+        },
+        {
+            "topic": "Du lịch & Giao thông",
+            "words": [
+                { "word": "飞机", "meaning": "máy bay" },
+                { "word": "火车", "meaning": "tàu hỏa" },
+                { "word": "地铁", "meaning": "tàu điện ngầm" },
+                { "word": "护照", "meaning": "hộ chiếu" },
+                { "word": "旅行", "meaning": "du lịch" }
+            ]
+        }
+    ]
+}

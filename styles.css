@@ -1,69 +1,123 @@
-/* General styles */
+/* Tổng thể */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #fdf4f5;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #a8edea, #fed6e3);
 }
 
-/* Flashcard container */
-.flashcard-container {
-    background: rgb(223, 244, 255);
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 100px;
+.app-container {
     text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     width: 350px;
 }
 
-.flashcard {
-    font-size: 25px;
-    font-weight: bold;
-    color: #333;
-    padding: 200px 50px;
+/* Tiêu đề */
+h1 {
+    font-size: 28px;
     margin-bottom: 20px;
+    color: #6b705c;
+}
+
+/* Dropdown chọn chủ đề */
+.topic-selector {
+    margin-bottom: 20px;
+}
+
+#topicSelect {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e8c1c5;
     border-radius: 10px;
-    background-color: #f9fafc;
-    border: 2px solid #ddd;
-    transition: transform 0.3s, background-color 0.3s;
+    background-color: #f8e2e4;
+    color: #6b705c;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
 }
 
-.flashcard:hover {
-    transform: scale(1.05);
-    background-color: #f3f4f6;
+#topicSelect:hover {
+    background-color: #fdecef;
+    border-color: #f4a4af;
 }
 
-/* Button styles */
+/* Flashcard */
+.flashcard-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fcefe8;
+    border: 2px solid #f4a4af;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b705c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.flashcard-container:hover {
+    background-color: #fdecef;
+    border-color: #e8c1c5;
+}
+
+/* Nút điều khiển */
 .buttons button {
-    font-size: 18px;
-    padding: 12px 20px;
     margin: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#flipButton {
-    background-color: #e9bad7;
+    background-color: #f4a4af;
     color: white;
-}
-
-#passButton {
-    background-color: #28a745;
-    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .buttons button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    opacity: 0.9;
+    background-color: #e3848f;
+    transform: scale(1.05);
 }
 
 .buttons button:active {
-    transform: translateY(0);
-    box-shadow: none;
+    background-color: #d76e79;
+    transform: scale(0.95);
+}
+
+/* Hiệu ứng pastel đẹp */
+body::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 300px;
+    height: 300px;
+    background: #f8e2e4;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(100px);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 400px;
+    height: 400px;
+    background: #fcefe8;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(100px);
 }
